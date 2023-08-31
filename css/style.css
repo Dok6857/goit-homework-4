@@ -36,6 +36,9 @@ main {
 
 .menu {
     border-bottom: 1px solid #e7e9fc;
+    position: fixed;
+    width: 100%;
+    background-color: #FFF;
 }
 
 .menu-navigation {
@@ -83,6 +86,7 @@ text-transform: uppercase;
     height: 4px;
     background-color: #404BBF;
     border-radius: 2px;
+    
 }
 
 .menu-navigation-item:focus,
@@ -100,7 +104,6 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-decoration: none;
 padding: 24px 0;
-position: relative;
 }
 
 .address {
@@ -247,11 +250,34 @@ letter-spacing: 0.02em;
 .team-card-desc {
     color: #434455;
 text-align: center;
+margin-bottom: 8px;
 
 /* Body */
 font-size: 16px;
 line-height: 1.5; /* 150% */
 letter-spacing: 0.02em;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover {
+    background-color: #404BBF;
 }
 
 .portfolio-title {
@@ -276,6 +302,35 @@ text-transform: capitalize;
     border: 1px solid #E7E9FC;
     padding: 32px 16px;
     border-top: none;
+}
+
+.portfolio-list-item:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-list-item:hover .overlay,
+.portfolio-list-item:focus .overlay {
+    transform: translateY(0);
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px 164px;
+    overflow: auto;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    transform: translateY(100%);
+    transition-duration: 250ms;
 }
 
 .portfolio-subtitle {
@@ -321,6 +376,28 @@ letter-spacing: 0.02em;
         /* 150% */
         letter-spacing: 0.02em;
         width: 264px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.footer-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-list-link:hover {
+    background-color: #31D0AA;
 }
 
 .visually-hidden {
