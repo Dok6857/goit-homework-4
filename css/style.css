@@ -94,6 +94,10 @@ text-transform: uppercase;
     border-radius: 2px;
 }
 
+.menu-navigation-item:hover {
+    color: #404BBF;
+}
+
 .menu-navigation-item {
     display: block;
     position: relative;
