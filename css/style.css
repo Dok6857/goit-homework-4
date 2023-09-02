@@ -150,8 +150,9 @@ ul {
 .hero-section {
     background: #2E2F42;
     max-width: 1440px;
-    height: 600px;
-    padding-top: 188px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 260px;
     padding-bottom: 188px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
      rgba(46, 47, 66, 0.7)),
@@ -475,7 +476,6 @@ letter-spacing: 0.02em;
 .benefits-title {
     color: #2E2F42;
     margin-bottom: 8px;
-    margin-top: 8px;
 
 /* Header 3 */
 font-size: 20px;
